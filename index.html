@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>VTubers Runner 1</title>
+    <title>VTuber Runner 1</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
@@ -27,7 +27,7 @@
       <div id="unity-footer">
         <div style="display: none;" id="unity-webgl-logo"></div>
         <div style="display: none;" id="unity-fullscreen-button"></div>
-        <div style="color: purple;display: none;" id="unity-build-title">VTubers Runner 1</div>
+        <div style="color: purple;display: none;" id="unity-build-title">VTuber Runner 1</div>
       </div>
     </div>
     <script>
@@ -63,15 +63,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/VTuberRunnerB.loader.js";
+      var loaderUrl = buildUrl + "/VTuberRunner1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/VTuberRunnerB.data.unityweb",
-        frameworkUrl: buildUrl + "/VTuberRunnerB.framework.js.unityweb",
-        codeUrl: buildUrl + "/VTuberRunnerB.wasm.unityweb",
+        dataUrl: buildUrl + "/VTuberRunner1.data.unityweb",
+        frameworkUrl: buildUrl + "/VTuberRunner1.framework.js.unityweb",
+        codeUrl: buildUrl + "/VTuberRunner1.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "PchanCegepdefi",
-        productName: "VTubers Runner",
-        productVersion: "0.2",
+        companyName: "VTuberapps",
+        productName: "VTuber Runner 1",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
@@ -102,6 +102,7 @@
         canvas.style.height = "800px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/VTuberRunner1.jpg.unityweb') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
