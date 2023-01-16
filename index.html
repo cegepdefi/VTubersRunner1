@@ -69,9 +69,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/VTuberRunner1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/VTuberRunner1.data.unityweb",
-        frameworkUrl: buildUrl + "/VTuberRunner1.framework.js.unityweb",
-        codeUrl: buildUrl + "/VTuberRunner1.wasm.unityweb",
+        dataUrl: buildUrl + "/VTuberRunner1.data",
+        frameworkUrl: buildUrl + "/VTuberRunner1.framework.js",
+        codeUrl: buildUrl + "/VTuberRunner1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "VTuberapps",
         productName: "VTuber Runner 1",
@@ -107,7 +107,7 @@
         canvas.classList.add("mystyle");
       }
 
-      canvas.style.background = "url('" + buildUrl + "/VTuberRunner1.jpg.unityweb') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/VTuberRunner1.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
